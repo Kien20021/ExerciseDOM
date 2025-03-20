@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        onclick="handleChangeColor()">
+        Swap color
+      </button>
+      <div>
+        <input
+          type="number"
+          class="form-control"
+          id="fontSizeInput"
+          placeholder="Nhap so"
+          onclick="changeFontSize()" />
+        <!-- <button
+          type="button"
+          class="btn btn-outline-danger"
+          >
+          font size
+        </button> -->
+      </div>
+
+      <p id="textRed">
+        HTML (viết tắt của từ Hyper Text Markup Language , hay còn gọi là "Ngôn
+        ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để
+        tạo nên các trang web trên World Wide Web. Nó có thể được trợ giúp bởi
+        các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.
+      </p>
+      <p id="textBlue">
+        Trong tin học, các tập tin định kiểu theo tầng dịch từ tiếng Anh là
+        Cascading Style Sheets (CSS) được dùng để miêu tả cách trình bày các tài
+        liệu viết bằng ngôn ngữ HTML và XHTML.[1] Ngoài ra ngôn ngữ định kiểu
+        theo tầng cũng có thể dùng cho XML, SVG, XUL. Các đặc điểm kỹ thuật của
+        CSS được duy trì bởi World Wide Web Consortium. Thay vì đặt các thẻ quy
+        định kiểu dáng cho văn bản HTML (hoặc XHTML) ngay trong nội dung của nó,
+        bạn nên sử dụng CSS.
+      </p>
+      <p id="textGreen">
+        JavaScript là ngôn ngữ lập trình được nhà phát triển sử dụng để tạo
+        trang web tương tác. Từ làm mới bảng tin trên trang mạng xã hội đến hiển
+        thị hình ảnh động và bản đồ tương tác, các chức năng của JavaScript có
+        thể cải thiện trải nghiệm người dùng của trang web. Là ngôn ngữ kịch bản
+        phía máy khách, JavaScript là một trong những công nghệ cốt lõi của
+        World Wide Web. Ví dụ: khi duyệt internet, bất cứ khi nào bạn thấy quảng
+        cáo quay vòng dạng hình ảnh, menu thả xuống nhấp để hiển thị hoặc màu
+        sắc phần tử thay đổi động trên trang web cũng chính là lúc bạn thấy các
+        hiệu ứng của JavaScript.
+      </p>
+    </div>
+    <div class="container">
+      <button class="btn btn-danger" onclick="copyContent()">
+        Copy nội dung từ đoạn 1 đến đoạn 2
+      </button>
+    </div>
+    <div class="container my-5">
+      <h2 class="text-danger">Nhan de thay doi mau nen</h2>
+      <button
+        type="button"
+        class="btn btn-danger"
+        onclick="handlChangeBg('red')">
+        red
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        onclick="handlChangeBg('gray')">
+        Secondary
+      </button>
+      <button
+        type="button"
+        class="btn btn-success"
+        onclick="handlChangeBg('green')">
+        Success
+      </button>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
