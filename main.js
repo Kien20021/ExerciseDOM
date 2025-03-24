@@ -1,6 +1,5 @@
 function handleChangeColor() {
   const textRed = document.getElementById("textRed");
-  console.log([textRed], "sssssssssss");
 
   textRed.style.color = "red";
   const textBlue = document.getElementById("textBlue");
@@ -9,7 +8,7 @@ function handleChangeColor() {
   textGreen.style.color = "green";
 }
 
-function handlChangeBg(color) {
+function handlChangeBackGround(color) {
   const body = document.querySelector("body");
   body.style.backgroundColor = color;
 }
